@@ -1,0 +1,821 @@
+$date
+   Sat Feb 17 19:03:19 2024
+$end
+$version
+  2023.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_APB $end
+$var reg 1 ! PCLK $end
+$var reg 1 " rd_clk $end
+$var reg 1 # PRESET_N $end
+$var reg 1 $ PSEL $end
+$var reg 8 % PADDR [7:0] $end
+$var reg 8 & PWDATA [7:0] $end
+$var reg 1 ' PENABLE $end
+$var reg 1 ( PWRITE $end
+$var reg 1 ) PREADY $end
+$var reg 1 * PSLVERR $end
+$var reg 8 + PRDATA [7:0] $end
+$var reg 1 , w_wr_rst_busy $end
+$var reg 1 - w_rd_rst_busy $end
+$scope module DUT $end
+$var wire 1 . PCLK $end
+$var wire 1 / rd_clk $end
+$var wire 1 0 PRESET_N $end
+$var wire 1 1 PSEL $end
+$var wire 8 2 PADDR [7:0] $end
+$var wire 8 3 PWDATA [7:0] $end
+$var wire 1 4 PENABLE $end
+$var wire 1 5 PWRITE $end
+$var reg 1 ) PREADY $end
+$var reg 1 * PSLVERR $end
+$var reg 8 + PRDATA [7:0] $end
+$var wire 1 6 w_wr_rst_busy $end
+$var wire 1 7 w_rd_rst_busy $end
+$var wire 1 8 w_full $end
+$var wire 1 9 w_wr_ack $end
+$var wire 1 : w_wr_en $end
+$var wire 17 ; w_din [16:0] $end
+$var wire 1 < r_empty $end
+$var wire 1 = r_valid $end
+$var wire 8 > r_dout [7:0] $end
+$var wire 1 ? r_rd_en $end
+$var wire 1 @ fifo_reset $end
+$var wire 1 A r_wr_rst_busy $end
+$var wire 1 B r_rd_rst_busy $end
+$scope module f1 $end
+$var wire 1 @ rst $end
+$var wire 1 . wr_clk $end
+$var wire 1 / rd_clk $end
+$var wire 17 ; din [16:0] $end
+$var wire 1 : wr_en $end
+$var wire 1 ? rd_en $end
+$var wire 17 C dout [16:0] $end
+$var wire 1 8 full $end
+$var wire 1 9 wr_ack $end
+$var wire 1 < empty $end
+$var wire 1 = valid $end
+$var wire 1 6 wr_rst_busy $end
+$var wire 1 7 rd_rst_busy $end
+$upscope $end
+$scope module a1 $end
+$var wire 1 . PCLK $end
+$var wire 1 0 PRESET_N $end
+$var wire 1 1 PSEL $end
+$var wire 8 2 PADDR [7:0] $end
+$var wire 8 3 PWDATA [7:0] $end
+$var wire 1 4 PENABLE $end
+$var wire 1 5 PWRITE $end
+$var reg 1 ) PREADY $end
+$var reg 1 * PSLVERR $end
+$var reg 8 + PRDATA [7:0] $end
+$var wire 1 8 w_full $end
+$var wire 1 9 w_wr_ack $end
+$var wire 1 6 w_wr_rst_busy $end
+$var wire 1 7 w_rd_rst_busy $end
+$var reg 1 D w_wr_en $end
+$var reg 17 E w_din [16:0] $end
+$var wire 1 < r_empty $end
+$var wire 1 = r_valid $end
+$var wire 1 A r_wr_rst_busy $end
+$var wire 1 B r_rd_rst_busy $end
+$var wire 8 > r_dout [7:0] $end
+$var reg 1 F r_rd_en $end
+$var reg 2 G write_fifo_reset [1:0] $end
+$var reg 2 H read_fifo_reset [1:0] $end
+$var reg 3 I next_state [2:0] $end
+$var reg 3 J present_state [2:0] $end
+$upscope $end
+$upscope $end
+$scope task APB_WRITE $end
+$upscope $end
+$scope task APB_READ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+0#
+0$
+b0 %
+b0 &
+0'
+0(
+0)
+0*
+b0 +
+0,
+0-
+1.
+1/
+00
+01
+b0 2
+b0 3
+04
+05
+06
+07
+18
+09
+0:
+b0 ;
+1<
+0=
+b0 >
+0?
+1@
+zA
+zB
+b0 C
+0D
+b0 E
+0F
+b0 G
+bz H
+b1 I
+b1 J
+$end
+#100
+1,
+1-
+16
+17
+18
+b11 G
+#5000
+0!
+0.
+#10000
+1!
+0"
+1.
+0/
+#15000
+0!
+0.
+#20000
+1!
+1"
+1.
+1/
+#25000
+0!
+0.
+#30000
+1!
+0"
+1.
+0/
+#35000
+0!
+0.
+#40000
+1!
+1"
+1.
+1/
+#45000
+0!
+0.
+#50000
+1!
+0"
+1.
+0/
+#55000
+0!
+0.
+#60000
+1!
+1"
+1.
+1/
+#65000
+0!
+0.
+#70000
+1!
+0"
+1.
+0/
+#75000
+0!
+0.
+#80000
+1!
+1"
+1.
+1/
+#85000
+0!
+0.
+#90000
+1!
+0"
+1.
+0/
+#95000
+0!
+0.
+#100000
+1!
+1"
+1#
+1.
+1/
+10
+0@
+#105000
+0!
+0.
+#110000
+1!
+0"
+1.
+0/
+#115000
+0!
+0.
+#120000
+1!
+1"
+1.
+1/
+#125000
+0!
+0.
+#130000
+1!
+0"
+1.
+0/
+#135000
+0!
+0.
+#140000
+1!
+1"
+1.
+1/
+#145000
+0!
+0.
+#150000
+1!
+0"
+1.
+0/
+#155000
+0!
+0.
+#160000
+1!
+1"
+1.
+1/
+#165000
+0!
+0.
+#170000
+1!
+0"
+1.
+0/
+#175000
+0!
+0.
+#180000
+1!
+1"
+1.
+1/
+#185000
+0!
+0.
+#190000
+1!
+0"
+1.
+0/
+#195000
+0!
+0.
+#200000
+1!
+1"
+1.
+1/
+#205000
+0!
+0.
+#210000
+1!
+0"
+1.
+0/
+#215000
+0!
+0.
+#220000
+1!
+1"
+1.
+1/
+#220100
+0-
+07
+b10 G
+#225000
+0!
+0.
+#230000
+1!
+0"
+1.
+0/
+#235000
+0!
+0.
+#240000
+1!
+1"
+1.
+1/
+#245000
+0!
+0.
+#250000
+1!
+0"
+1.
+0/
+#255000
+0!
+0.
+#260000
+1!
+1"
+1.
+1/
+#265000
+0!
+0.
+#270000
+1!
+0"
+1.
+0/
+#275000
+0!
+0.
+#280000
+1!
+1"
+1.
+1/
+#285000
+0!
+0.
+#290000
+1!
+0"
+1.
+0/
+#295000
+0!
+0.
+#300000
+1!
+1"
+1.
+1/
+#300100
+08
+#305000
+0!
+0.
+#310000
+1!
+0"
+1.
+0/
+#310100
+x,
+x6
+bx0 G
+#315000
+0!
+0.
+#320000
+1!
+1"
+1.
+1/
+#325000
+0!
+0.
+#330000
+1!
+0"
+1.
+0/
+#335000
+0!
+0.
+#340000
+1!
+1"
+1.
+1/
+#340100
+0,
+06
+b0 G
+#345000
+0!
+0.
+#350000
+1!
+0"
+1.
+0/
+#355000
+0!
+1$
+b10101010 %
+b10111011 &
+1(
+0.
+11
+b10101010 2
+b10111011 3
+15
+b11010101010111011 ;
+b11010101010111011 E
+b10 I
+#360000
+1!
+1"
+1.
+1/
+1:
+1D
+b1 I
+b10 J
+#365000
+0!
+1'
+0.
+14
+1D
+b100 I
+#370000
+1!
+0"
+1.
+0/
+0:
+0D
+b100 J
+#370100
+1)
+19
+b1 I
+#375000
+0!
+0.
+#380000
+1!
+1"
+0)
+1.
+1/
+b1 J
+#380100
+09
+#385000
+0!
+0.
+#390000
+1!
+0"
+1.
+0/
+#390100
+0$
+0'
+01
+04
+#395000
+0!
+1$
+b0 &
+0(
+0.
+11
+b0 3
+05
+b1010101000000000 ;
+b1010101000000000 E
+b10 I
+#400000
+1!
+1"
+1.
+1/
+1:
+1D
+b1 I
+b10 J
+#405000
+0!
+1'
+0.
+14
+1D
+b100 I
+#410000
+1!
+0"
+1.
+0/
+0:
+0D
+b100 J
+#410100
+19
+#415000
+0!
+0.
+#420000
+1!
+1"
+1.
+1/
+#420100
+09
+#425000
+0!
+0.
+#430000
+1!
+0"
+1.
+0/
+#435000
+0!
+0.
+#440000
+1!
+1"
+1.
+1/
+#445000
+0!
+0.
+#450000
+1!
+0"
+1.
+0/
+#455000
+0!
+0.
+#460000
+1!
+1"
+1.
+1/
+#460100
+0<
+1?
+1F
+#465000
+0!
+0.
+#470000
+1!
+0"
+1.
+0/
+#475000
+0!
+0.
+#480000
+1!
+1"
+b10111011 +
+1.
+1/
+b10111011 >
+b11010101010111011 C
+1F
+#480100
+1)
+1<
+1=
+0?
+0F
+b1 I
+#485000
+0!
+0.
+#490000
+1!
+0"
+0)
+1.
+0/
+b1 J
+#495000
+0!
+0.
+#500000
+1!
+1"
+1.
+1/
+#500100
+0$
+0'
+01
+04
+0<
+0=
+#505000
+0!
+1$
+0.
+11
+b10 I
+#510000
+1!
+0"
+1.
+0/
+1:
+1D
+b1 I
+b10 J
+#515000
+0!
+1'
+0.
+14
+1D
+b100 I
+#520000
+1!
+1"
+1.
+1/
+0:
+1?
+0D
+1F
+b100 J
+#520100
+19
+1F
+#525000
+0!
+0.
+#530000
+1!
+0"
+1.
+0/
+#530100
+09
+1F
+#535000
+0!
+0.
+#540000
+1!
+1"
+b0 +
+1.
+1/
+b0 >
+b1010101000000000 C
+1F
+#540100
+1)
+1<
+1=
+0?
+0F
+b1 I
+#545000
+0!
+0.
+#550000
+1!
+0"
+0)
+1.
+0/
+b1 J
+#555000
+0!
+0.
+#560000
+1!
+1"
+1.
+1/
+#560100
+0$
+0'
+01
+04
+0=
+#565000
+0!
+0.
+#570000
+1!
+0"
+1.
+0/
+#575000
+0!
+0.
+#580000
+1!
+1"
+1.
+1/
+#585000
+0!
+0.
+#590000
+1!
+0"
+1.
+0/
+#595000
+0!
+0.
+#600000
+1!
+1"
+1.
+1/
+#600100
+0<
+#605000
+0!
+0.
+#610000
+1!
+0"
+1.
+0/
+#615000
+0!
+0.
+#620000
+1!
+1"
+1.
+1/
+#625000
+0!
+0.
+#630000
+1!
+0"
+1.
+0/
+#635000
+0!
+0.
+#640000
+1!
+1"
+1.
+1/
+#645000
+0!
+0.
+#650000
+1!
+0"
+1.
+0/
+#655000
+0!
+0.
+#660000
+1!
+1"
+1.
+1/
